@@ -1,0 +1,15 @@
+name: "webteam-wsgi"
+summary: "A charm for hosting the webteam's Python projects"
+maintainer: "Robin Winslow <robin@robinwinslow.co.uk>"
+description: |
+    A charm for hosting the webteam's Python projects
+series:
+    - xenial
+tags:
+    - python
+    - webservice
+resources:
+    application:
+        type: file
+        filename: application.tar.gz
+        description: "A tarball containing the application code"
